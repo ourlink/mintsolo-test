@@ -29,5 +29,3 @@ services:
       ENABLE_SOLO: true
       ENABLE_PROXY: false
       POOL_IDENTIFIER: MintSolo Umbrel
-
-networks: {}
