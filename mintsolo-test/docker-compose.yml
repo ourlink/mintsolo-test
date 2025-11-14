@@ -10,7 +10,6 @@ services:
     image: ourlink/mintsolo:latest
     restart: unless-stopped
     ports:
-      - 3068:3068/tcp
       - 3067:3067/tcp
     volumes:
       - ${APP_DATA_DIR}/data/database:/mintsolo/DB
