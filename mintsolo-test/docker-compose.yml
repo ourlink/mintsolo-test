@@ -29,7 +29,7 @@ services:
       POOL_IDENTIFIER: MintSolo Umbrel
 
   zrok-init:
-    image: busybox@sha256:7b5ade1b11f52517f5cdf3b6194588587b9c4b14d3244b6c96ed7f5b0ff31458
+    image: busybox@sha256:e3652a00a2fabd16ce889f0aa32c38eec347b997e73bd09e69c962ec7f8732ee
     command: chown -Rc 2171:2171 /mnt/
     user: root
     volumes:
