@@ -29,14 +29,14 @@ services:
       POOL_IDENTIFIER: MintSolo Umbrel
 
   zrok-init:
-    image: busybox:latest@sha256:e3652a00a2fabd16ce889f0aa32c38eec347b997e73bd09e69c962ec7f8732ee
+    image: busybox
     command: chown -Rc 2171:2171 /mnt/
     user: root
     volumes:
       - zrok_env:/mnt
 
   zrok-enable:
-    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok@sha256:ce807816d16a0975763ef5537a58aa3f63fd6d08c8fdc6c882a2d92aa35dac11}
+    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok}
     depends_on:
       zrok-init:
         condition: service_completed_successfully
@@ -50,7 +50,7 @@ services:
       ZROK_ENVIRONMENT_NAME: null
 
   zrok-share:
-    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok@sha256:ce807816d16a0975763ef5537a58aa3f63fd6d08c8fdc6c882a2d92aa35dac11}
+    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok}
     restart: unless-stopped
     entrypoint: zrok-share.bash
     depends_on:
@@ -66,7 +66,7 @@ services:
       PFXLOG_NO_JSON: "true"
 
   zrok-test:
-    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok@sha256:ce807816d16a0975763ef5537a58aa3f63fd6d08c8fdc6c882a2d92aa35dac11}
+    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok}
     command: test endpoint --address 0.0.0.0 # 9090
 
 volumes:
