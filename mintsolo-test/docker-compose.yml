@@ -35,6 +35,20 @@ services:
     volumes:
       - zrok_env:/mnt
 
+  zrok-enable:
+    image: ${ZROK_CONTAINER_IMAGE:-docker.io/openziti/zrok:latest}
+    depends_on:
+      zrok-init:
+        condition: service_completed_successfully
+    entrypoint: zrok-enable.bash
+    volumes:
+      - zrok_env:/mnt
+    environment:
+      HOME: /mnt
+      ZROK_ENABLE_TOKEN: e794E6PkiamK
+      ZROK_API_ENDPOINT: https://zrok.shared.djjunk.com
+      ZROK_ENVIRONMENT_NAME: null
+
 volumes:
   zrok_env: null
 
