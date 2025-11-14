@@ -49,7 +49,7 @@ services:
       ZROK_API_ENDPOINT: https://zrok.shared.djjunk.com
       ZROK_ENVIRONMENT_NAME: null
 
- zrok-share:
+  zrok-share:
     image: docker.io/openziti/zrok:latest
     restart: unless-stopped
     entrypoint: zrok-share.bash
