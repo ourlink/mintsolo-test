@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mintsolo-test
 name: Mintsolo-Test API
 tagline: MintSolo - Test of the API
-icon: https://svgur.com/i/mvA.svg
+icon: https://imgur.com/a/Z2nha8P
 category: Development
 version: "1.0.0"
 port: 4000
@@ -19,7 +19,7 @@ submission: https://github.com/ourlink/mintsolo-test
 repo: https://github.com/ourlink/mintsolo-test
 support: https://github.com/ourlink/mintsolo-test/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://imgur.com/a/Z2nha8P
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
