@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: mintsolo-api_mintsolo-info_1
+      APP_HOST: mintsolo-api_server_1
       APP_PORT: 3000
 
   server:
@@ -68,7 +68,7 @@ services:
   mintsolo-info:
     image: ourlink/mintsolo-info:latest
     ports:
-      - 80:80
+      - 8080:80
     volumes:
       - zrok_env:/mnt
     restart: unless-stopped
