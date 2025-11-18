@@ -3,8 +3,8 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: mintsolo-test_server_1
-      APP_PORT: 3068
+      APP_HOST: mintsolo-api_server_1
+      APP_PORT: 4000
 
   server:
     image: ourlink/mintsolo:latest
@@ -64,6 +64,26 @@ services:
       ZROK_TARGET: http://server:3068
       ZROK_INSECURE: null
       PFXLOG_NO_JSON: "true"
+
+  mintsolo-info:
+    image: ourlink/mintsolo-info:latest
+    ports:
+      - 4000:80
+    volumes:
+      - zrok_env:/mnt
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - --quiet
+        - --tries=1
+        - --spider
+        - http://localhost/health
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
 
 volumes:
   zrok_env: null

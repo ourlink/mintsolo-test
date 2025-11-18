@@ -1,2 +1,2 @@
-id: "mintsolo-test" # Choose the ID for your app store. This should contain only alphabets ("a to z") and dashes ("-").
-name: "MintSolo-Test for API" # Choose the name of your app store. It will show up in the UI as "<name> App Store".
+id: "mintsolo-api" # Choose the ID for your app store. This should contain only alphabets ("a to z") and dashes ("-").
+name: "MintSolo API" # Choose the name of your app store. It will show up in the UI as "<name> App Store".
