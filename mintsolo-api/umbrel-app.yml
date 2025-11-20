@@ -7,7 +7,13 @@ category: Development
 version: "0.0.1"
 port: 3069
 description: >-
-  Add your app's description here.
+  Take control of your mining destiny with MintSolo's powerful solo mining dashboard!
+
+  Solo Mine on your own Bitcoin Node, using Umbrel and view your miner statistics
+  anywhere in the world, all via a secure web connection available only to you.
+
+  No longer is your solo mining an island. View the Solo Mining ecosystem, and
+  compare your miners to other miners around the world.
 
 
   You can also add newlines!
@@ -15,15 +21,17 @@ description: >-
 developer: MintSolo
 website: https://mintsolo.com
 submitter: ourlink
-submission: https://github.com/ourlink/mintsolo-test
-repo: https://github.com/ourlink/mintsolo-test
-support: https://github.com/ourlink/mintsolo-test/issues
+submission: https://github.com/ourlink/mintsolo-api
+repo: https://github.com/ourlink/mintsolo-api
+support: https://github.com/ourlink/mintsolo-api/issues
 gallery:
-  - https://i.imgur.com/PrgiuqS.png
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/TtyoTmc.jpg
+  - https://i.imgur.com/TtyoTmc.jpg
+  - https://i.imgur.com/TtyoTmc.jpg
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  This is the BETA release of our MintSolo-API. Using this tool you can now gain
+  a better understanding of how your miner is operating compared to similar miners
+  around the world.
 dependencies:
   - bitcoin
 path: ""
