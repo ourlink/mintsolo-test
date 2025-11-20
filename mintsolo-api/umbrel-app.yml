@@ -5,7 +5,7 @@ tagline: MintSolo - API for Mining Bitcoin
 icon: https://i.imgur.com/PrgiuqS.png
 category: Development
 version: "0.0.1"
-port: 3010
+port: 3069
 description: >-
   Add your app's description here.
 

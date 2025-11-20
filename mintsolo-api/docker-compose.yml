@@ -1,11 +1,5 @@
 services:
 
-  app_proxy:
-    environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: mintsolo-api_mintsolo-intro_1
-      APP_PORT: 3010
-
   server:
     image: ourlink/mintsolo:latest
     restart: unless-stopped
