@@ -1,17 +1,46 @@
-## Umbrel Community App Store Template
+![github_commit_hdr](https://github.com/user-attachments/assets/e0b60686-df4e-4f02-b117-2ca2fd2198c9)
 
-This repository is a template to create an Umbrel Community App Store. These additional app stores allow developers to distribute applications without submitting to the [Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
+## Welcome to a new evolution in Solo Bitcoin Mining!
 
-## How to use:
+### MintSolo Platform - Beta v0.0.1
 
-1. Start by clicking the "Use this template" button located above.
-2. Assign an ID and name to your app store within the `umbrel-app-store.yml` file. This file specifies two important attributes:
-    - `id` - Acts as a unique prefix for every app within your Community App Store. You must start your application's ID with your app store's ID. For instance, in this template, the app store ID is `sparkles`, and there's an app named `hello world`. Consequently, the app's ID should be: `sparkles-hello-world`.
-    - `name` - This is the name of the Community App Store displayed in the umbrelOS UI.
-3. Change the name of the `sparkles-hello-world` folder to match your app's ID. The app ID is for you to decide. For example, if your app store ID is `whistles`, and your app is named My Video Downloader, you could set its app ID to `whistles-my-video-downloader`, and rename the folder accordingly.
-4. Next, enter your app's listing details in the `whistles-my-video-downloader/umbrel-app.yml`. These are displayed in the umbrelOS UI.
-5. Include the necessary Docker services in `whistles-my-video-downloader/docker-compose.yml`.
-6. That's it! Your Community App Store, featuring your unique app, is now set up and ready to go. To use your Community App Store, you can add its GitHub url the umbrelOS user interface as shown in the following demo:
+With this release, we are introducing our community app store version of the MintSolo, Solo Bitcoin Mining Platform for Umbrel.
+
+This release allows you to run the MintSolo-Platform on Umbrel along with your favorite Bitcoin Node (Bitcoin Core or Bitcoin Knots). 
+
+# About MintSolo
+
+The MintSolo-Platform allows you to solo mine for Bitcoin using your own local Bitcoin node and the MintSolo mining platform. However, unlike other solo Bitcoin mining apps on Umbrel, we do not leave you isolated from the outside world when it comes to analytics. Instead, we provide you with analytics about your local node and miners, along with aggregated metrics from other solo mining nodes around the world.
+
+Here are some of the current and future metrics you will enjoy with MintSolo;
+
+Currently Available Metrics
+
+- Bitcoin Stats - current block, Network Hashrate, Difficulty, Transactions, Price
+- Top 10 Mining Devices - provides a ranking of mining devices in the MintSolo ecosystem
+- Active Mining Devices - provides the total number of mining devices in the MintSolo ecosystem
+- Hashrate History Trend - provides a 36-hour trend of MintSolo miner hashrate
+- Difficulty - Current and Best
+- Workers - hashrate, best difficulty, uptime, last seen
+- Worker Trend - total workers and individual worker trend
+
+Future Metrics
+
+- KPI's - Platform Statistics
+  - Total Miners
+  - Total Workers
+  - Miner Rankings - hashrate and workers
+  - Comparison Analysis - Miner and Workers
+- Trend Charts - Platform Statistics
+  -  Total Miners and Hashrate
+  -  and more...
+
+## Getting Started
+
+To use the MintSolo-Platform on Umbrel, install this GitHub Repository using the Umbrel Community App Store installation process.
+
+Once you have the MintSolo-Platform installed, you can follow the steps in the web page presented, which outlines how to connect your miners and configure your Dashboard Endpoint.
+
+Join our community of miners for support and to contribute to our development!
 
 
-https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
