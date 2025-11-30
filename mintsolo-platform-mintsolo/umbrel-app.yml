@@ -4,7 +4,7 @@ name: MintSolo
 tagline: MintSolo - Solo Bitcoin Mining Platform
 icon: https://i.imgur.com/PrgiuqS.png
 category: Development
-version: "0.0.2"
+version: "0.0.3"
 port: 3069
 description: >-
   ### Solo Bitcoin Mining with MintSolo via Umbrel: A Data-Driven Approach
@@ -53,7 +53,7 @@ releaseNotes: >-
   This is the BETA release of MintSolo on Umbrel. Using this tool you can now gain
   a better understanding of how your miner is operating compared to similar miners
   around the world.
-  This release uses a compressed docker file for the platform.
+  This release is optimized for deployment on ARM64 and AMD64 platforms.
 dependencies:
   - bitcoin
 path: ""
