@@ -58,7 +58,7 @@ services:
       ZROK_INSECURE: null
       PFXLOG_NO_JSON: "true"
   mintsolo-intro:
-    image: ourlink/mintsolo-intro:latest@sha256:96d2af58fc97c1b2f96b6dcd3fc4c72dbb1a1b2559e356819232bc702d5df4b8
+    image: ourlink/mintsolo-intro:latest@sha256:bccbfd97983461df6bf415705416f24d6d07275fd63121e65621b92a5d97ea21
     ports:
       - 3069:80
     volumes:
